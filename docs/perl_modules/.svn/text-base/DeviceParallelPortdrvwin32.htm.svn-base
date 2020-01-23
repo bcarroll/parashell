@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Device::ParallelPort::drv::win32</title>
+<meta name="description" content="Windows 32 Drivers Version" />
+<meta name="created" content="Sun Apr 27 13:43:17 2008" />
+<meta name="generator" content="Pod::Xhtml 1.59" />
+<link rel="stylesheet" href="../../../../cpan.css" type="text/css" />
+
+</head>
+<body>
+
+<h1>Device::ParallelPort::drv::win32 - Windows 32 Drivers Version</h1>
+
+<hr /><table width="100%"><tr>
+<td align="left"><a href="../../../../Device-ParallelPort-drv-win32/">Device-ParallelPort-drv-win32 documentation</a>
+&nbsp;|&nbsp;<a href="win32.pm.html">view source</a>
+</td><td align="right">
+Contained in the <a href="http://cpan.uwinnipeg.ca/dist/Device-ParallelPort-drv-win32">Device-ParallelPort-drv-win32</a> distribution.</td>
+</tr></table>
+<hr />
+<div class="pod">
+<!-- INDEX START -->
+<h3 id="TOP">Index</h3>
+
+<ul><li><a href="#NAME">NAME</a></li>
+<li><a href="#DESCRIPTION">DESCRIPTION</a></li>
+<li><a href="#INSTALLATION">INSTALLATION</a></li>
+<li><a href="#inpout32_dll">inpout32.dll</a></li>
+<li><a href="#COPYRIGHT">COPYRIGHT</a></li>
+<li><a href="#AUTHOR">AUTHOR</a></li>
+<li><a href="#SEE_ALSO">SEE ALSO</a>
+</li>
+</ul><hr />
+<!-- INDEX END -->
+
+<h1 id="NAME">NAME</h1><p><a href="#TOP" class="toplink"> 
+<img src="../../../../up.png" alt="Top" border="0" /></a></p>
+
+<div id="NAME_CONTENT">
+<p>Device::ParallelPort::drv::win32 - Windows 32 Drivers Version</p>
+
+</div>
+<h1 id="DESCRIPTION">DESCRIPTION</h1><p><a href="#TOP" class="toplink"> 
+<img src="../../../../up.png" alt="Top" border="0" /></a></p>
+
+<div id="DESCRIPTION_CONTENT">
+<p>This module uses the inpout32.dll common to Windows users to read and write to
+the Parallel Port.  For futher details see <a href="../../../../Device-ParallelPort/Device/ParallelPort.html">Device::ParallelPort</a></p>
+
+</div>
+<h1 id="INSTALLATION">INSTALLATION</h1><p><a href="#TOP" class="toplink"> 
+<img src="../../../../up.png" alt="Top" border="0" /></a></p>
+
+<div id="INSTALLATION_CONTENT">
+<p>Standard installation, but you also need &quot;inpout32.dll&quot; which may require
+either putting into your windows System directory, or at the location of your
+executable.</p>
+
+</div>
+<h1 id="inpout32_dll">inpout32.dll</h1><p><a href="#TOP" class="toplink"> 
+<img src="../../../../up.png" alt="Top" border="0" /></a></p>
+
+<div id="inpout32_dll_CONTENT">
+<p>inpout32.dll actually comes from a 3rd party source and is freely available.</p>
+<p>http://www.logix4u.net/inpout32.htm</p>
+<p>It apparently works on Win95, Win98, WinNT, Win2K and WinXP. The XP and other
+ptoected mode systems has been solved by the DLL automatically loading a Kernel
+Mode driver at initalisation. </p>
+<p>NOTE - Although this is not mentioned on this web site, it may be necessary to
+have administration privs to load this DLL.</p>
+
+</div>
+<h1 id="COPYRIGHT">COPYRIGHT</h1><p><a href="#TOP" class="toplink"> 
+<img src="../../../../up.png" alt="Top" border="0" /></a></p>
+
+<div id="COPYRIGHT_CONTENT">
+<p>Copyright (c) 2002,2004 Scott Penrose. All rights reserved.
+This program is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.</p>
+
+</div>
+<h1 id="AUTHOR">AUTHOR</h1><p><a href="#TOP" class="toplink"> 
+<img src="../../../../up.png" alt="Top" border="0" /></a></p>
+
+<div id="AUTHOR_CONTENT">
+<p>Scott Penrose <a href="#scottp@dd.com.au">scottp@dd.com.au</a>, <a href="http://linux.dd.com.au/">http://linux.dd.com.au/</a></p>
+
+</div>
+<h1 id="SEE_ALSO">SEE ALSO</h1><p><a href="#TOP" class="toplink"> 
+<img src="../../../../up.png" alt="Top" border="0" /></a></p>
+
+<div id="SEE_ALSO_CONTENT">
+<p><a href="../../../../Device-ParallelPort/Device/ParallelPort.html">Device::ParallelPort</a></p>
+
+</div>
+</div>
+<hr /><table width="100%"><tr>
+<td align="left"><a href="../../../../Device-ParallelPort-drv-win32/">Device-ParallelPort-drv-win32 documentation</a>
+&nbsp;|&nbsp;<a href="win32.pm.html">view source</a>
+</td><td align="right">
+Contained in the <a href="http://cpan.uwinnipeg.ca/dist/Device-ParallelPort-drv-win32">Device-ParallelPort-drv-win32</a> distribution.</td>
+</tr></table>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <link rel="stylesheet" href="http://st.pimg.net/tucs/style.css" type="text/css" />
+<link rel="stylesheet" href="http://st.pimg.net/tucs/print.css" type="text/css" media="print" />
+  <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="http://search.cpan.org/uploads.rdf" />
+  <link rel="search" href="http://st.pimg.net/tucs/opensearch.xml" type="application/opensearchdescription+xml" title="SearchCPAN" />
+  <title>Device::ParallelPort - search.cpan.org</title>
+ <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3528438-1']);
+    _gaq.push(["_setCustomVar",2,"Distribution","Device-ParallelPort",3]);
+    _gaq.push(["_setCustomVar",5,"Release","Device-ParallelPort-1.00",3]);
+    _gaq.push(["_setCustomVar",3,"Module","Device::ParallelPort",3]);
+    _gaq.push(["_setCustomVar",1,"Author","SCOTT",3]);
+    _gaq.push(['_trackPageview']);
+  </script>
+ </head>
+ <body id="cpansearch">
+<center><div class="logo"><a href="/"><img src="http://st.pimg.net/tucs/img/cpan_banner.png" alt="CPAN"></a></div></center>
+<div class="menubar">
+ <a href="/">Home</a>
+&middot; <a href="/author/">Authors</a>
+&middot; <a href="/recent">Recent</a>
+&middot; <a href="http://log.perl.org/cpansearch/">News</a>
+&middot; <a href="/mirror">Mirrors</a>
+&middot; <a href="/faq.html">FAQ</a>
+&middot; <a href="/feedback">Feedback</a>
+</div>
+<form method="get" action="/search" name="f" class="searchbox">
+<input type="text" name="query" value="" size="35">
+<br>in <select name="mode">
+ <option value="all">All</option>
+ <option value="module" >Modules</option>
+ <option value="dist" >Distributions</option>
+ <option value="author" >Authors</option>
+</select>&nbsp;<input type="submit" value="CPAN Search">
+</form>
+
+
+ <a name="_top"></a>
+  <div class=path>
+<div id=permalink class="noprint"><a href="/perldoc?Device::ParallelPort">permalink</a></div>
+  <a href="/~scott/">Scott Penrose</a> &gt;
+  <a href="/~scott/Device-ParallelPort-1.00/">Device-ParallelPort-1.00</a> &gt;
+  Device::ParallelPort
+ </div>
+
+<div class="noprint" style="float:right;align:left;width:19ex">
+<a href="http://hexten.net/cpan-faces/"><img src="http://www.gravatar.com/avatar.php?gravatar_id=678f7cf146a2d87f589baf85e35db3f1&rating=G&size=80&default=http%3A%2F%2Fst.pimg.net%2Ftucs%2Fimg%2Fwho.png" width=80 height=80 
+style="float:right"
+/></a>
+<br style="clear:both"/>
+<p style="text-align:right">Download:<br/> <a href="/CPAN/authors/id/S/SC/SCOTT/Device-ParallelPort-1.00.tar.gz">Device-ParallelPort-1.00.tar.gz</a></p>
+<p style="text-align:right"><a href="http://deps.cpantesters.org/?module=Device::ParallelPort;perl=latest">Dependencies</a></p>
+<p style="text-align:right"><a href="http://www.annocpan.org/~SCOTT/Device-ParallelPort-1.00/lib/Device/ParallelPort.pm">Annotate this POD
+</a></p>
+<div class=box style='width:150px; float: right'>
+<h1 class=t5>Related Modules</h1>
+<div style="margin:2px">
+<a href="/perldoc?Inline::C">Inline::C</a><br>
+<a href="/perldoc?Win32::API">Win32::API</a><br>
+<small>
+<a href="http://perlmonks.org/?node=cpan+module+search&pivot=1&module=Device::ParallelPort">more...</a><br>
+By <a href="http://perlmonks.org/">perlmonks.org</a></small>
+</div>
+</div>
+
+<div style="float:right">
+<div class=box style='width:150px'>
+<h1 class=t5>CPAN RT</h1>
+<div style="margin:2px">
+<table style="margin-left:auto;margin-right:auto">
+<tr><td>New&nbsp;</td><td style="text-align:right"> 5</td></tr>
+<tr><td>Open&nbsp;</td><td style="text-align:right"> 0</td></tr>
+</table>
+<a href="https://rt.cpan.org/NoAuth/Bugs.html?Dist=Device-ParallelPort">View Bugs</a><br/>
+<a href="https://rt.cpan.org/Public/Bug/Report.html?Queue=Device-ParallelPort">Report a bug</a>
+</div>
+</div>
+
+</div>
+</div>
+  Module Version:  1.00 &nbsp;
+<span class="noprint">
+  <a href="/src/SCOTT/Device-ParallelPort-1.00/lib/Device/ParallelPort.pm">Source</a> &nbsp;
+</span>
+<a name="___top"></a>
+<div class=pod>
+<div class=toc>
+<div class='indexgroup'>
+<ul   class='indexList indexList1'>
+  <li class='indexItem indexItem1'><a href='#NAME'>NAME</a>
+  <li class='indexItem indexItem1'><a href='#SYNOPSIS'>SYNOPSIS</a>
+  <li class='indexItem indexItem1'><a href='#DESCRIPTION'>DESCRIPTION</a>
+  <li class='indexItem indexItem1'><a href='#DRIVER_MODULES'>DRIVER MODULES</a>
+  <li class='indexItem indexItem1'><a href='#DEVICE_MODULES'>DEVICE MODULES</a>
+  <li class='indexItem indexItem1'><a href='#METHODS'>METHODS</a>
+  <ul   class='indexList indexList2'>
+    <li class='indexItem indexItem2'><a href='#new'>new</a>
+  </ul>
+  <li class='indexItem indexItem1'><a href='#CONSTRUCTOR'>CONSTRUCTOR</a>
+  <li class='indexItem indexItem1'><a href='#METHODS'>METHODS</a>
+  <li class='indexItem indexItem1'><a href='#LIMITATIONS'>LIMITATIONS</a>
+  <li class='indexItem indexItem1'><a href='#DISCUSSIONS'>DISCUSSIONS</a>
+  <ul   class='indexList indexList2'>
+    <li class='indexItem indexItem2'><a href='#Hardware'>Hardware</a>
+  </ul>
+  <li class='indexItem indexItem1'><a href='#BUGS'>BUGS</a>
+  <li class='indexItem indexItem1'><a href='#TODO'>TODO</a>
+  <li class='indexItem indexItem1'><a href='#HISTORY'>HISTORY</a>
+  <li class='indexItem indexItem1'><a href='#COPYRIGHT'>COPYRIGHT</a>
+  <li class='indexItem indexItem1'><a href='#AUTHOR'>AUTHOR</a>
+  <li class='indexItem indexItem1'><a href='#SEE_ALSO'>SEE ALSO</a>
+</ul>
+</div>
+</div>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="NAME"
+>NAME <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Device::ParallelPort - Parallel Port Driver for Perl</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="SYNOPSIS"
+>SYNOPSIS <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<pre>        my $port = Device::ParallelPort-&#62;new();
+        $port-&#62;set_bit(3,1);
+        print $port-&#62;get_bit(3) . &#34;\n&#34;;
+        print ord($port-&#62;get_byte(0)) . &#34;\n&#34;;
+        $port-&#62;set_byte(0, chr(255));</pre>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="DESCRIPTION"
+>DESCRIPTION <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>A parallel port driver module. This module provides an API to all parallel ports, by providing the ability to write any number of drivers. Modules are available for linux (both directly and via parport), win32 and a simple script version.</p>
+
+<p>NOTE - This actual module is a factory class only - it is used to automatically return the correct class and has not other intelligence / purpose.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="DRIVER_MODULES"
+>DRIVER MODULES <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>NOTE - You MUST load one of the drivers for your operating system before this module will correctly work - they are in separate CPAN Modules.</p>
+
+<pre>        L&#60;Device::ParallelPort::drv::linux&#62; - Direct hardware access to a base address.
+        L&#60;Device::ParallelPort::drv::parport&#62; - Linux access to /dev/parport drivers
+        L&#60;Device::ParallelPort::drv::script&#62; - Run a script with parameters
+        L&#60;Device::ParallelPort::drv::dummy_byte&#62; - Pretending byte driver for testing
+        L&#60;Device::ParallelPort::drv::dummy_bit&#62; - Pretending bit driver for testing
+        L&#60;Device::ParallelPort::drv::win32&#62; - Windows 32 DLL access driver</pre>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="DEVICE_MODULES"
+>DEVICE MODULES <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<pre>        L&#60;Device::ParallelPort::Printer&#62; - An example that can talk to a printer
+        L&#60;Device::ParallelPort::JayCar&#62; - Simple JayCar electronics latched, addressable controller
+        L&#60;Device::ParallelPort::SerialFlash&#62; - SerialFlash of bits - useful for many driver chips</pre>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="METHODS"
+>METHODS <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<h2><a class='u' href='#___top' title='click to go to top of document'
+name="new"
+>new</a></h2>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="CONSTRUCTOR"
+>CONSTRUCTOR <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<dl>
+<dt><a name='new'></a><a name="new_(_DRIVER_)"
+>new ( DRIVER )</a></dt>
+
+<dd>
+<p>Creates a <code>Device::ParallelPort</code>.</p>
+</dd>
+</dl>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="METHODS"
+>METHODS <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<dl>
+<dt><a name='get_bit'></a><a name="get_bit(_BITNUMBER_)"
+>get_bit( BITNUMBER )</a></dt>
+
+<dd>
+<p>You can get any bit that is supported by this particular driver. Normally you can consider a printer driver having 3 bytes (that is 24 bits would you believe). Don&#39;t forget to start bits at 0. The driver will most likely croak if you ask for a bit out of range.</p>
+
+<dt><a name='get_byte'></a><a name="get_byte_(_BYTENUMBER_)"
+>get_byte ( BYTENUMBER )</a></dt>
+
+<dd>
+<p>Bytes are some times more convenient to deal with, certainly they are in most drivers and therefore most Devices. As per get_bit most drivers only have access to 3 bytes (0 - 2).</p>
+
+<dt><a name='set_bit'></a><a name="set_bit_(_BITNUMBER,_VALUE_)"
+>set_bit ( BITNUMBER, VALUE )</a></dt>
+
+<dd>
+<p>Setting a bit is very handy method. This is the method I use above all others, in particular to turn on and off rellays.</p>
+
+<dt><a name='set_byte'></a><a name="set_byte_(_BYTENUMBER,_VALUE_)"
+>set_byte ( BYTENUMBER, VALUE )</a></dt>
+
+<dd>
+<p>Bytes again. Don&#39;t forget that some devices don&#39;t allow you to write to some locations. For example the stock standard parallel controller does not allow you to write to the status entry. This is actually a ridiculous limitation as almost all parallel chips allow all three bytes to be inputs or outputs, however drivers such as linux parallel port does not allow you to write to the status byte.</p>
+
+<p>NOTE - VALUE must be a single charachter - NOT an integer. Use chr(interger).</p>
+
+<dt><a name='get_data'></a><a name="get_data_(_)"
+>get_data ( )</a></dt>
+
+<dd>
+<dt><a name='set_data'></a><a name="set_data_(_VALUE_)"
+>set_data ( VALUE )</a></dt>
+
+<dd>
+<dt><a name='get_control'></a><a name="get_control_(_)"
+>get_control ( )</a></dt>
+
+<dd>
+<dt><a name='set_control'></a><a name="set_control_(_VALUE_)"
+>set_control ( VALUE )</a></dt>
+
+<dd>
+<dt><a name='get_status'></a><a name="get_status_(_)"
+>get_status ( )</a></dt>
+
+<dd>
+<dt><a name='set_status'></a><a name="set_status_(_VALUE_)"
+>set_status ( VALUE )</a></dt>
+
+<dd>
+<p>The normal parallel port is broken up into three bytes. The first is data, second is control and third is status. Therefore for this reason these three bytes are controlled by the above methods.</p>
+</dd>
+</dl>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="LIMITATIONS"
+>LIMITATIONS <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Lots... This is not a fast driver. It is designed to give you simple access to a very old device, the parallel chip. Don&#39;t, whatever you do, use this for drivers that need fast access.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="DISCUSSIONS"
+>DISCUSSIONS <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<h2><a class='u' href='#___top' title='click to go to top of document'
+name="Hardware"
+>Hardware</a></h2>
+
+<p>Following is the standard hardware table, so that you can find the correct pins and information. Note also the Inverted flag.</p>
+
+<p>A number of real projects have been produced using Device::ParallelPort. For futher information see <a href="http://linux.dd.com.au/quest/os-perl/parallelport/" class="podlinkurl"
+>http://linux.dd.com.au/quest/os-perl/parallelport/</a></p>
+
+<p>Pin No (DB25) - Signal name - Direction - Register - bit - Inverted</p>
+
+<p>1 - nStrobe - Out - Control-0 - Yes</p>
+
+<p>2 - Data0 - In/Out - Data-0 - No</p>
+
+<p>3 - Data1 - In/Out - Data-1 - No</p>
+
+<p>4 - Data2 - In/Out - Data-2 - No</p>
+
+<p>5 - Data3 - In/Out - Data-3 - No</p>
+
+<p>6 - Data4 - In/Out - Data-4 - No</p>
+
+<p>7 - Data5 - In/Out - Data-5 - No</p>
+
+<p>8 - Data6 - In/Out - Data-6 - No</p>
+
+<p>9 - Data7 - In/Out - Data-7 - No</p>
+
+<p>1 - 0 nAck - In - Status-6 - No</p>
+
+<p>1 - 1 Busy - In - Status-7 - Yes</p>
+
+<p>1 - 2 Paper-Out - In - Status-5 - No</p>
+
+<p>1 - 3 Select - In - Status-4 - No</p>
+
+<p>1 - 4 Linefeed - Out - Control-1 - Yes</p>
+
+<p>1 - 5 nError - In - Status-3 - No</p>
+
+<p>1 - 6 nInitialize - Out - Control-2 - No</p>
+
+<p>1 - 7 nSelect-Printer - Out - Control-3 - Yes</p>
+
+<p>18-25 - Ground</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="BUGS"
+>BUGS <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Not known yet. Windows support is new so expect some.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="TODO"
+>TODO <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Refer to TODO list with packages and code.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="HISTORY"
+>HISTORY <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>History here covers central Device::ParallelPort and not the specific drivers, see them individually. For full history see Changes in the package.</p>
+
+<dl>
+<dt><a name='0'></a><a name="0.04_-_First_release"
+>0.04 - First release</a></dt>
+
+<dd>
+<p>Basic first release. Worked for Linux ROOT and Linux parport drivers only. Windows work only in early pre-alpha testing.</p>
+
+<dt><a name='1'></a><a name="1.00_-_First_stable_release"
+>1.00 - First stable release</a></dt>
+
+<dd>
+<p>Stable - I beleive it is stable, but this is only on my own testing and machines. Lots of imporvements to documentation, auto load modules etc. Improved use of perl. In particular this is the first release of Windows and a fully working auto driver.</p>
+</dd>
+</dl>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="COPYRIGHT"
+>COPYRIGHT <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Copyright (c) 2002,2003,2004 Scott Penrose. All rights reserved. This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="AUTHOR"
+>AUTHOR <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Scott Penrose <a href="/perldoc?scottp%40dd.com.au" class="podlinkpod"
+>scottp@dd.com.au</a>, <a href="http://linux.dd.com.au/" class="podlinkurl"
+>http://linux.dd.com.au/</a></p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="SEE_ALSO"
+>SEE ALSO <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p><a href="/~scott/Device-ParallelPort-1.00/lib/Device/ParallelPort/drv.pm" class="podlinkpod"
+>Device::ParallelPort::drv</a> for developing a driver.</p>
+
+</div>
+
+
+<div class="footer"><div class="cpanstats">56484 Uploads, 20098 Distributions
+81552 Modules, 8165 Uploaders
+</div>
+hosted by <a href="http://www.weblocal.ca">weblocal.ca</a><br/>
+<a href="http://www.weblocal.ca"><img alt="Find. Rate. Share." src="http://st.pimg.net/tucs/img/weblocal_logo.gif"></a>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript" src="http://ipv4.v6test.develooper.com/cdn/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ipv4.v6test.develooper.com/js/v1/v6test.js"></script>
+
+<script type="text/javascript">
+   // v6.target = '';
+   if (!v6.target) { v6.only_once = true }
+   v6.site = '7A0D89A6-2B82-11DF-B9DA-F61CBD13F020';
+   v6.api_server = 'http://ipv4.v6test.develooper.com';
+   try {
+     v6.test();
+   } catch(err) {}
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("a[href^=http:]").click(function(){
+      var href = $(this).attr('href');
+      var m = href.match('\/\/([^\/:]+)');
+      _gaq.push(['_trackEvent','External',m[1]]);
+    });
+    $("a[href^=/CPAN/]").click(function(){
+      var href = $(this).attr('href');
+      _gaq.push(['_trackEvent','Download',href]);
+    });
+  });
+</script>
+<!-- Tue May  4 18:37:10 2010 GMT (0.0511338710784912) @cpansearch1 -->
+ </body>
+</html>

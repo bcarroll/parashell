@@ -1,0 +1,38 @@
+2002-7-22
+	* src/parashell.c - Command line arguments supported
+	* src/pin.c - Command line arguments supported
+
+2006-09-06
+	* src/parashell.pl - Windows support using inpout32.dll
+	* bin/Win32/parashell.exe - Updated binary
+
+2006-09-07
+	* src/parashell.pl - Combined input and output into single script
+	* bin/Win32/parashell.exe - Updated binary
+
+2008-12-01
+	* src/Linux - Created separate source directory for	Linux
+	* src/Win32 - Created separate source directory for	Windows
+	* src/Win32/parashell.pl - rewritten to allow using other parallel port bytes (CONTROL, DATA, and STATUS)
+													 - changed Option argument syntax
+	* bin/Win32/parashell.exe - Updated binary
+	* README - Updated to reflect new changes
+	* INSTALL - Included clarifications to Windows system directory
+	* docs/parallel_port_pinout.txt - Added pinout documentation for the parallel port
+	
+2010-04-19
+	*src/Win32/parashell.pl - Set default mode to read.
+													- Set default port to DATA
+													- Set default data to 0
+													- Added -h flag to display usage/help information.
+													- Added -m flag to specify mode.
+													- Added -p flag to specify port.
+													-	Added -d flag to specify data.
+													- Added -v and -verbose flags to display additional information regarding the interation with the parallel port.
+													- Added error handling to pout subroutine.  If the port or data is not specified the usage/help information is displayed.
+													- Reformatted usage/help information.
+	* bin/Win32/parashell.exe - Updated binary using perl 5.10
+	* README - Updated contact information
+
+2010-05-03
+	* bin/Win32/parashell.exe - Updated binary using perl 5.6 to address reported errors.

@@ -1,0 +1,12 @@
+parashell
+
+Installation on Linux/Unix
+  - make && make install
+  - execute /usr/local/bin/parashell (output)
+  - execute /usr/local/bin/pin (input)
+
+Installation on Windows
+  - Copy bin/Win32/inpout32.dll to the windows system directory (usually C:\Windows\system\)
+  - Use parashell.exe to access the Parallel Port (input and output)
+
+That's all there is to it!

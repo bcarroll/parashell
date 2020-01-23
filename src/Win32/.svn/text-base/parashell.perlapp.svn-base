@@ -1,0 +1,33 @@
+#!C:\Program Files\ActiveState Perl Dev Kit 7.3\bin\lib\pai.exe
+PAP-Version: 1.0
+Packer: C:\Program Files\ActiveState Perl Dev Kit 7.3\bin\perlapp.exe
+Script: parashell.pl
+Cwd: C:\Documents and Settings\bcarroll\Desktop\parashell\src\Win32
+Clean: 1
+Date: 2010-04-19 11:16:12
+Debug: 
+Dependent: 0
+Dyndll: 0
+Exe: ..\..\bin\Win32\parashell.exe
+Force: 1
+Gui: 0
+Hostname: BCARROL2
+Icon: parashell.ico
+No-Compress: 0
+No-Logo: 1
+Runlib: 
+Shared: none
+Tmpdir: 
+Verbose: 0
+Version-Comments: Completely Open Sourced!
+Version-CompanyName: 
+Version-FileDescription: Parallel port programming interface
+Version-FileVersion: 2.3
+Version-InternalName: parashell
+Version-LegalCopyright: Brett Carroll
+Version-LegalTrademarks: 
+Version-OriginalFilename: parashell
+Version-ProductName: parashell
+Version-ProductVersion: 2.3
+Warnings: 0
+Xclude: 0

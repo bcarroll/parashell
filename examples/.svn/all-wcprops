@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/parashell/!svn/ver/30/examples
+END
+count.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/parashell/!svn/ver/18/examples/count.sh
+END
+7seg_led.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/parashell/!svn/ver/19/examples/7seg_led.sh
+END
+right_knider.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/parashell/!svn/ver/17/examples/right_knider.sh
+END
+stepper_motor.pl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/parashell/!svn/ver/30/examples/stepper_motor.pl
+END

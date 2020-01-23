@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <link rel="stylesheet" href="http://st.pimg.net/tucs/style.css" type="text/css" />
+<link rel="stylesheet" href="http://st.pimg.net/tucs/print.css" type="text/css" media="print" />
+  <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="http://search.cpan.org/uploads.rdf" />
+  <link rel="search" href="http://st.pimg.net/tucs/opensearch.xml" type="application/opensearchdescription+xml" title="SearchCPAN" />
+  <title>Device::ParallelPort::drv::auto - search.cpan.org</title>
+ <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3528438-1']);
+    _gaq.push(["_setCustomVar",2,"Distribution","Device-ParallelPort",3]);
+    _gaq.push(["_setCustomVar",5,"Release","Device-ParallelPort-1.00",3]);
+    _gaq.push(["_setCustomVar",3,"Module","Device::ParallelPort::drv::auto",3]);
+    _gaq.push(["_setCustomVar",1,"Author","SCOTT",3]);
+    _gaq.push(['_trackPageview']);
+  </script>
+ </head>
+ <body id="cpansearch">
+<center><div class="logo"><a href="/"><img src="http://st.pimg.net/tucs/img/cpan_banner.png" alt="CPAN"></a></div></center>
+<div class="menubar">
+ <a href="/">Home</a>
+&middot; <a href="/author/">Authors</a>
+&middot; <a href="/recent">Recent</a>
+&middot; <a href="http://log.perl.org/cpansearch/">News</a>
+&middot; <a href="/mirror">Mirrors</a>
+&middot; <a href="/faq.html">FAQ</a>
+&middot; <a href="/feedback">Feedback</a>
+</div>
+<form method="get" action="/search" name="f" class="searchbox">
+<input type="text" name="query" value="" size="35">
+<br>in <select name="mode">
+ <option value="all">All</option>
+ <option value="module" >Modules</option>
+ <option value="dist" >Distributions</option>
+ <option value="author" >Authors</option>
+</select>&nbsp;<input type="submit" value="CPAN Search">
+</form>
+
+
+ <a name="_top"></a>
+  <div class=path>
+<div id=permalink class="noprint"><a href="/perldoc?Device::ParallelPort::drv::auto">permalink</a></div>
+  <a href="/~scott/">Scott Penrose</a> &gt;
+  <a href="/~scott/Device-ParallelPort-1.00/">Device-ParallelPort-1.00</a> &gt;
+  Device::ParallelPort::drv::auto
+ </div>
+
+<div class="noprint" style="float:right;align:left;width:19ex">
+<a href="http://hexten.net/cpan-faces/"><img src="http://www.gravatar.com/avatar.php?gravatar_id=678f7cf146a2d87f589baf85e35db3f1&rating=G&size=80&default=http%3A%2F%2Fst.pimg.net%2Ftucs%2Fimg%2Fwho.png" width=80 height=80 
+style="float:right"
+/></a>
+<br style="clear:both"/>
+<p style="text-align:right">Download:<br/> <a href="/CPAN/authors/id/S/SC/SCOTT/Device-ParallelPort-1.00.tar.gz">Device-ParallelPort-1.00.tar.gz</a></p>
+<p style="text-align:right"><a href="http://deps.cpantesters.org/?module=Device::ParallelPort::drv::auto;perl=latest">Dependencies</a></p>
+<p style="text-align:right"><a href="http://www.annocpan.org/~SCOTT/Device-ParallelPort-1.00/lib/Device/ParallelPort/drv/auto.pm">Annotate this POD
+</a></p>
+
+<div style="float:right">
+<div class=box style='width:150px'>
+<h1 class=t5>CPAN RT</h1>
+<div style="margin:2px">
+<table style="margin-left:auto;margin-right:auto">
+<tr><td>New&nbsp;</td><td style="text-align:right"> 5</td></tr>
+<tr><td>Open&nbsp;</td><td style="text-align:right"> 0</td></tr>
+</table>
+<a href="https://rt.cpan.org/NoAuth/Bugs.html?Dist=Device-ParallelPort">View Bugs</a><br/>
+<a href="https://rt.cpan.org/Public/Bug/Report.html?Queue=Device-ParallelPort">Report a bug</a>
+</div>
+</div>
+
+</div>
+</div>
+<span class="noprint">
+  <a href="/src/SCOTT/Device-ParallelPort-1.00/lib/Device/ParallelPort/drv/auto.pm">Source</a> &nbsp;
+</span>
+<a name="___top"></a>
+<div class=pod>
+<div class=toc>
+<div class='indexgroup'>
+<ul   class='indexList indexList1'>
+  <li class='indexItem indexItem1'><a href='#NAME'>NAME</a>
+  <li class='indexItem indexItem1'><a href='#SYNOPSIS'>SYNOPSIS</a>
+  <li class='indexItem indexItem1'><a href='#DESCRIPTION'>DESCRIPTION</a>
+  <li class='indexItem indexItem1'><a href='#DEVELOPMENT'>DEVELOPMENT</a>
+  <li class='indexItem indexItem1'><a href='#COPYRIGHT'>COPYRIGHT</a>
+  <li class='indexItem indexItem1'><a href='#AUTHOR'>AUTHOR</a>
+  <li class='indexItem indexItem1'><a href='#SEE_ALSO'>SEE ALSO</a>
+</ul>
+</div>
+</div>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="NAME"
+>NAME <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Device::ParallelPort::drv::auto - Automatically choose driver.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="SYNOPSIS"
+>SYNOPSIS <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<pre>        use Device::ParallelPort;
+        my $pp = Device::ParallelPort-&#62;new(&#39;auto:0&#39;);</pre>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="DESCRIPTION"
+>DESCRIPTION <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>This module should be used if you do not care what driver is used. It is very handy for writing cross platform applications in that it will autoamtically determine which parallel port driver is appropriate.</p>
+
+<p>See <a href="/~scott/Device-ParallelPort-1.00/lib/Device/ParallelPort.pm" class="podlinkpod"
+>Device::ParallelPort</a> for full details.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="DEVELOPMENT"
+>DEVELOPMENT <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>The current nature of it requires modifications to this module to add new drivers. Longer term it would be better if it tried each driver installed on the system in turn allowing new drivers to add their own interfaces.</p>
+
+<p>As such, the current version only detects between three drivers.</p>
+
+<pre>        * parport - If linux and has a writable /dev/parportX
+        * linux - If linux and running as root (and no parport)
+        * win32 - If running on windows</pre>
+
+<p>NOTE - You MUST have the driver mentioned above loaded on your system for this to work. They are each SEPARATELY available in CPAN.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="COPYRIGHT"
+>COPYRIGHT <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Copyright (c) 2002,2003,2004 Scott Penrose. All rights reserved. This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.</p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="AUTHOR"
+>AUTHOR <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p>Scott Penrose <a href="/perldoc?scottp%40dd.com.au" class="podlinkpod"
+>scottp@dd.com.au</a>, <a href="http://linux.dd.com.au/" class="podlinkurl"
+>http://linux.dd.com.au/</a></p>
+
+<h1><a class='u' href='#___top' title='click to go to top of document'
+name="SEE_ALSO"
+>SEE ALSO <img alt='^' src='http://st.pimg.net/tucs/img/up.gif'></a></h1>
+
+<p><a href="/~scott/Device-ParallelPort-1.00/lib/Device/ParallelPort.pm" class="podlinkpod"
+>Device::ParallelPort</a></p>
+
+</div>
+
+
+<div class="footer"><div class="cpanstats">56484 Uploads, 20098 Distributions
+81552 Modules, 8165 Uploaders
+</div>
+hosted by <a href="http://www.weblocal.ca">weblocal.ca</a><br/>
+<a href="http://www.weblocal.ca"><img alt="Find. Rate. Share." src="http://st.pimg.net/tucs/img/weblocal_logo.gif"></a>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript" src="http://ipv4.v6test.develooper.com/cdn/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ipv4.v6test.develooper.com/js/v1/v6test.js"></script>
+
+<script type="text/javascript">
+   // v6.target = '';
+   if (!v6.target) { v6.only_once = true }
+   v6.site = '7A0D89A6-2B82-11DF-B9DA-F61CBD13F020';
+   v6.api_server = 'http://ipv4.v6test.develooper.com';
+   try {
+     v6.test();
+   } catch(err) {}
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("a[href^=http:]").click(function(){
+      var href = $(this).attr('href');
+      var m = href.match('\/\/([^\/:]+)');
+      _gaq.push(['_trackEvent','External',m[1]]);
+    });
+    $("a[href^=/CPAN/]").click(function(){
+      var href = $(this).attr('href');
+      _gaq.push(['_trackEvent','Download',href]);
+    });
+  });
+</script>
+<!-- Tue May  4 18:38:04 2010 GMT (0.0143959522247314) @cpansearch1 -->
+ </body>
+</html>

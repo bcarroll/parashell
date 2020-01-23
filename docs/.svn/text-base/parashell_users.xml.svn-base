@@ -1,0 +1,29 @@
+<xml>
+	<user>
+		<title>PC Output Interface</title>
+		<description>A versaile output interface that can control external devices direct from your computer. Uses freely available software and works with both windows and Linux.</description>
+		<url>http://www.zen22142.zen.co.uk/Circuits/Interface/pc_int.htm</url>
+	</user>
+	<user>
+		<title>rfid-php</title>
+		<description>This project is trying to popularize RFID as future of barcode. It describes how this technology is easy to implement in many companies for different tasks (not only warehouse movement ). </description>
+		<url>http://code.google.com/p/rfid-php/</url>
+	</user>
+	<user>
+		<title>Barrett Hand</title>
+		<description>A multi-fingered programmable grasper with the dexterity to secure target objects of different sizes, shapes, and orientations.</description>
+		<url>http://wikiri.upc.es/index.php/Barrett_Hand</url>
+	</user>
+</xml>
+
+CPU monitor, new email & new RSS alerts using LEDs
+making 8 LEDs that are connected to your computer via the parallel cable, and are controlled to show a CPU monitor, and give an alert on a new email or RSS feed.
+http://ubuntuforums.org/archive/index.php/t-158265.html
+
+1-Wire and 64 Channel Latch Drive Bay Adapter 
+This is the heart of a number of control projects I have in mind (including the Linux automated brewery). 
+http://www.taclug.org/wiki/Electronics_Projects
+
+
+
+

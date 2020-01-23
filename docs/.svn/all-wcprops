@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svnroot/parashell/!svn/ver/22/docs
+END
+LED.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/parashell/!svn/ver/20/docs/LED.txt
+END
+stepper_motors.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/parashell/!svn/ver/22/docs/stepper_motors.txt
+END
+parashell_users.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/parashell/!svn/ver/37/docs/parashell_users.xml
+END
+parallel_port_pinout.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/parashell/!svn/ver/21/docs/parallel_port_pinout.txt
+END

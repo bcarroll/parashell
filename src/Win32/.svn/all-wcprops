@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/parashell/!svn/ver/34/src/Win32
+END
+bugs.log
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/parashell/!svn/ver/34/src/Win32/bugs.log
+END
+parashell.ico
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/parashell/!svn/ver/29/src/Win32/parashell.ico
+END
+parashell.pl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/parashell/!svn/ver/33/src/Win32/parashell.pl
+END
+parashell.perlapp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/parashell/!svn/ver/29/src/Win32/parashell.perlapp
+END

@@ -1,0 +1,6 @@
+BUG:
+Device::ParallelPort unabel to create driver win32 (see Device::ParallelPort::drv::auto for further information) - Can't locate Device/ParallelPort/drv/win32.pm in @INC (@INC contains: C:/Perl/site/lib C:/Perl/lib .) at (eval 1) line 2.
+BEGIN failed--compilation aborted at (eval 1) line 2.
+
+SOLUTION:
+ppm install Device::ParallelPort::drv::win32
